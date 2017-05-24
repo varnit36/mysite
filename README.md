@@ -1,5 +1,5 @@
 # mysite
--This is my portfolio.
+- This is my portfolio.
 - Django,CSS,HTML
 ## Navigation
 - me: about me
