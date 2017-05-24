@@ -1,0 +1,70 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Aman Agarwal</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/narrow-jt.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">me </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'current_projects' %}">now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">résumé</a>
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+      
+      <div class="row marketing">
+        <div class="col-lg-6">
+        <div class="my5">
+          <img src="{% static "img/dp1.jpg" %}" id="pic" style='height: 100%; width: 100%; object-fit: contain' >
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+        <div class ="my2">
+          <h1 class="lead1">HELLO!</h1>
+          <p class="my3" style="font-size: 24px;font-weight: 100">I am Aman Agarwal.</p>
+          <p class="my3">I am currently an undergraduate student at IIIT-Delhi (Class of 2019) pursuing my Bachelor's Degree in Technology with Computer Science and Engineering being my major.</p>
+          <p class="my3">My interest lies in exploring solutions to modern problems by integrating design and development. I will be keeping track of all the projects that I work on, here.</p>
+          <br>
+          <p class="my3">"The secret to creativity is <em>knowing how to hide your sources</em>."</p>
+          <p class="my3">^ and I just like that quote </p>
+        </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="icons">
+        <a href="https://www.facebook.com/aman5198" target="_blank"><img src="{% static 'img/facebook1.png' %}"  class="si"></a>
+        <a href="#" ><img src="{% static 'img/linkedin-512.png' %}" class="si"></a>
+        <a href="https://github.com/aman15012" target="_blank"><img src="{% static 'img/github-512.png' %}" class="si" ></a>
+        </div>
+      </footer>
+
+
+    </div>
+  </body>
+</html>
